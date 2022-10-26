@@ -15,18 +15,19 @@ module.exports = (sequelize, DataTypes) => {
     }
     Submission.init(
         {
+            submission_no:{
+                type: DataTypes.INTEGER,
+                primaryKey: true,
+                autoIncrement: true
+            },
             submission_id: {
                 type: DataTypes.STRING,
-                primaryKey: true,
                 allowNull: false
             },
+            name: DataTypes.STRING,
+            description: DataTypes.STRING,
             user_id:DataTypes.STRING,
-            documents: DataTypes.ARRAY(DataTypes.STRING),
-            flow: DataTypes.STRING,
-            tasks: DataTypes.ARRAY(DataTypes.STRING),
             status: DataTypes.STRING,
-            priority: DataTypes.STRING,
-            case_status: DataTypes.STRING,
             created_at: {
                 type: DataTypes.DATE
             },
@@ -41,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
         {
             sequelize,
             modelName: 'submissions',
-            schema: 'virgin_island',
+            schema: 'sentiment_analysis',
             createdAt: false,
             updatedAt: false
         });

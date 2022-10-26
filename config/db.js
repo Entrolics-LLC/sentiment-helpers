@@ -19,7 +19,7 @@ const init = (cloudConfig = config) => {
             .then(() => console.log('****'))
             .catch((e) => console.log('error'))
 
-        db.createSchema('sentiment')
+        db.createSchema('sentiment_analysis')
             .then(() => console.log('****'))
             .catch((e) => console.log('error'))
 
