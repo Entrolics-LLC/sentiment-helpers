@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
             issue_area:DataTypes.STRING,
             similar_records:DataTypes.INTEGER,
             reviewed_by: DataTypes.STRING,
+            score:DataTypes.FLOAT,
             created_at: {
                 type: DataTypes.DATE
             },
