@@ -31,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
             similar_records:DataTypes.INTEGER,
             reviewed_by: DataTypes.STRING,
             score:DataTypes.FLOAT,
+            magnitude:DataTypes.FLOAT,
             created_at: {
                 type: DataTypes.DATE
             },
