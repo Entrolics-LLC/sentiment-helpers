@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
     Submission.init(
         {
-            submission_no:{
+            submission_no: {
                 type: DataTypes.INTEGER,
                 primaryKey: true,
                 autoIncrement: true
@@ -25,8 +25,16 @@ module.exports = (sequelize, DataTypes) => {
                 allowNull: false
             },
             name: DataTypes.STRING,
+            gov_aency: DataTypes.STRING,
+            organization: DataTypes.STRING,
+            annonymizeData: DataTypes.BOOLEAN,
+            perf_sent_analysis: DataTypes.BOOLEAN,
+            ent_extraction: DataTypes.BOOLEAN,
+            top_recommendation: DataTypes.BOOLEAN,
+            issue_area_rec: DataTypes.BOOLEAN,
+            similarity: DataTypes.STRING,
             description: DataTypes.STRING,
-            user_id:DataTypes.STRING,
+            user_id: DataTypes.STRING,
             status: DataTypes.STRING,
             created_at: {
                 type: DataTypes.DATE
@@ -34,8 +42,8 @@ module.exports = (sequelize, DataTypes) => {
             completed_date: {
                 type: DataTypes.DATE
             },
-            is_deleted:{ 
-                type:DataTypes.BOOLEAN,
+            is_deleted: {
+                type: DataTypes.BOOLEAN,
                 defaultValue: false
             }
         },
