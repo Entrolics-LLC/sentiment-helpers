@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
         {
             sequelize,
             modelName: 'users',
-            schema: 'virgin_island',
+            schema: 'sentiment_analysis',
             createdAt: false,
             updatedAt: false
         });
