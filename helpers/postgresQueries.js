@@ -1,6 +1,7 @@
 const runQuery = async (db, query) => {
     let queryType = query?.split(' ')[0]?.toUpperCase()
-    const data = await db.query(query, { type: db?.QueryTypes?.[queryType] })
+    let Type = (db?.QueryTypes?.[queryType]) ? (db?.QueryTypes?.[queryType]) : (db?.QueryTypes?.["SELECT"]) 
+    const data = await db.query(query, { type: Type })
     return Array.isArray(data) ? data?.flat() : data
 }
 
