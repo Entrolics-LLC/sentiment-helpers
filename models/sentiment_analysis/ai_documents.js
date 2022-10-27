@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
                 primaryKey: true,
                 allowNull: false
             },
+            submission_id: DataTypes.ARRAY(DataTypes.STRING),
             topics: DataTypes.ARRAY(DataTypes.STRING),
             redacted_comment: DataTypes.STRING(10000),
             additional_fields:DataTypes.JSON,
