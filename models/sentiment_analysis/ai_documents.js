@@ -15,12 +15,11 @@ module.exports = (sequelize, DataTypes) => {
     }
     Ai_Document.init(
         {
-            id: {
+            document_id: {
                 type: DataTypes.STRING,
                 primaryKey: true,
                 allowNull: false
             },
-            document_id: DataTypes.STRING,
             topics: DataTypes.ARRAY(DataTypes.STRING),
             redacted_comment: DataTypes.STRING(10000),
             additional_fields:DataTypes.JSON,
