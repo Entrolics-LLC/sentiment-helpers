@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
                 primaryKey: true,
                 allowNull: false
             },
-            name: DataTypes.STRING,
+            // name: DataTypes.STRING,
             email: DataTypes.STRING,
             password: DataTypes.STRING,
             auth_type: DataTypes.STRING,
