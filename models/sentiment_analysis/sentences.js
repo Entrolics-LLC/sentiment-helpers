@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         {
             sequelize,
-            modelName: 'documents',
+            modelName: 'sentences',
             schema: 'sentiment_analysis',
             createdAt: false,
             updatedAt: false
