@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
                 primaryKey: true,
                 allowNull: false
             },
-            submission_id: DataTypes.STRING(100000),
+            submission_id: DataTypes.STRING,
             document_no:{
                 type: DataTypes.STRING
             },
