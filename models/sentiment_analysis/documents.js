@@ -21,22 +21,23 @@ module.exports = (sequelize, DataTypes) => {
                 allowNull: false
             },
             submission_id: DataTypes.STRING,
-            document_no:{
+            document_no: {
                 type: DataTypes.STRING
             },
             comment: DataTypes.STRING(100000),
             notes: DataTypes.STRING(5000),
-            reviewed:DataTypes.STRING,
-            issue_area:DataTypes.STRING,
-            similar_records:DataTypes.INTEGER,
+            reviewed: DataTypes.STRING,
+            issue_area: DataTypes.STRING,
+            similar_records: DataTypes.INTEGER,
             reviewed_by: DataTypes.STRING,
-            score:DataTypes.FLOAT,
-            magnitude:DataTypes.FLOAT,
+            score: DataTypes.FLOAT,
+            magnitude: DataTypes.FLOAT,
+            sim_rec_id: DataTypes.ARRAY(DataTypes.STRING),
             created_at: {
                 type: DataTypes.DATE
             },
-            is_deleted:{ 
-                type:DataTypes.BOOLEAN,
+            is_deleted: {
+                type: DataTypes.BOOLEAN,
                 defaultValue: false
             }
         },
