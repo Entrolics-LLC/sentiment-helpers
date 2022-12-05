@@ -32,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
             reviewed_by: DataTypes.STRING,
             score: DataTypes.FLOAT,
             magnitude: DataTypes.FLOAT,
-            sim_rec_id: DataTypes.ARRAY(DataTypes.STRING),
+            sim_rec_id: DataTypes.ARRAY(DataTypes.JSON),
             created_at: {
                 type: DataTypes.DATE
             },
