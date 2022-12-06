@@ -31,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
             similar_records: DataTypes.INTEGER,
             reviewed_by: DataTypes.STRING,
             score: DataTypes.FLOAT,
+            similarity_score: DataTypes.FLOAT,
             magnitude: DataTypes.FLOAT,
             sim_rec_id: DataTypes.ARRAY(DataTypes.JSON),
             created_at: {
